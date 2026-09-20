@@ -20,7 +20,7 @@ from workflow import run_workflow
 
 
 APP_TITLE = "AI Study Pack Generator"
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.6-flash"
 
 PACK_OPTIONS = [
     "Summary / Notes",
