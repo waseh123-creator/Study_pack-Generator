@@ -35,7 +35,18 @@ PACK_OPTIONS = [
 
 LEVELS = ["Beginner", "Intermediate", "Advanced"]
 LANGUAGES = ["English", "Roman Urdu", "Urdu"]
+import time
 
+def call_gemini_with_retry(prompt, model, max_retries=3):
+    for attempt in range(max_retries):
+        try:
+            response = model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            if "503" in str(e) and attempt < max_retries - 1:
+                time.sleep(2)  # 2 seconds wait karke dobara try karega
+                continue
+            raise e
 
 def get_api_key() -> str:
     """Read the API key from Streamlit Secrets or environment variables."""
