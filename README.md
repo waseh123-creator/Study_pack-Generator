@@ -1,3 +1,5 @@
+https://hmwaseh-studypack-generator-d6e48cj72vbrupbiuccq7v.streamlit.app/
+
 # 📚 AI Study Pack Generator
 
 An AI-powered personalized study-pack generator built with **Python, Google Gemini, and Streamlit**.
