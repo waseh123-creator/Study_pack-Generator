@@ -1,4 +1,4 @@
-https://hmwaseh-studypack-generator-d6e48cj72vbrupbiuccq7v.streamlit.app/
+App Link: https://hmwaseh-studypack-generator-d6e48cj72vbrupbiuccq7v.streamlit.app/
 
 # 📚 AI Study Pack Generator
 
